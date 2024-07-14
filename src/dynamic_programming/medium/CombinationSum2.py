@@ -3,10 +3,10 @@ from typing import List
 
 # Recursion is breaking down the problem into similar smaller problem.
 # recursive function here needs to track:
-# 1. current response array - current_arr
-# 2. next_position in the remaining list - next_pos
-# 3. target.(final_target - sum of current_arr).
-#In candidates= [1, 2, 2, 2, 5], target(final) = 5 breaks down as:
+#   1. current response array - current_arr
+#   2. next_position in the remaining list - next_position
+#   3. target.(final_target - sum of current_arr).
+#Finding sub-list in candidates= [1, 2, 2, 2, 5] with target(final) = 5 breaks down as:
 #   current_arr=[1], target(remaining)=4, next_position=1 (index in candidates[])
 #       current_arr=[1, 2], target= 5-(1+2) = 2, next_position=2
 #           current_arr=[1,2,2], target=0, next_position=3 . Notice when target=0, a result is available to add to the final result. Add current_arr to final_result
